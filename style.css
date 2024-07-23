@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b3c6ff;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    border-style: groove;
+    box-shadow: 12px 6px 12px rgba(0, 0, 0, 0.5),
+        -12px -6px 12px rgba(255, 255, 255, 0.5),
+        12px -6px 12px rgba(255, 255, 255, 0.5),
+        -12px 6px 12px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s;
+}
+
+canvas:hover {
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.8), 0px 0px 40px rgba(255, 255, 255, 0.5);
+}
+
+.roll {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    opacity: 0.6;
+    transition: 0.3s;
+    background-color: #6175cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.roll:hover {
+    background-color: #203ec5;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.new-game-button {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #6175cc;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.new-game-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.player-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: blue;
+    transition: 0.3s;
+    margin: 0;
+}
+
+.player-circle.player2 {
+    background-color: yellow;
+    margin: 0;
+}
+
+
+* {
+    font-family: "Comic Sans MS"
+}

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+<head>
+    <title>Simple Snake & Ladder</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <canvas style="margin-top: 10px;" id="board" width="650" height="650"></canvas>
+        <div style="margin: 30px;text-align:center;">
+            <h1>SNAKE AND LADDER</h1>
+            <h3 id="gotdice1"><div class="player-circle" id="player1"></div>Player 1 Got: </h3>
+            <h3 id="gotdice2"><div class="player-circle player2" id="player2"></div>Player 2 Got: </h3>
+            <button class="new-game-button" onclick="initGame()">Start a new game</button>
+            <br />
+            <!-- Menambahkan efek transform dan box-shadow saat tombol dihover -->
+            <input class="roll" type="button" id="rollDice" value="Roll Dice" onclick="rollDice()" />
+        </div>
+    </div>
+
+    <!-- Perbarui lokasi file audio -->
+    <audio id="moveSound" src="rpg-dice-rolling-95182.mp3"></audio>
+    <audio id="winSound" src="winSoundx.mp3"></audio>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
